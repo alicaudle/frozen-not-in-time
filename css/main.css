@@ -1,5 +1,5 @@
 html {
-  font-family: "Fredoka One", cursive;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .content {
@@ -10,6 +10,7 @@ html {
 
 h1 {
   color: #990073;
+  left: -.15em;
   transform: rotate(-10deg);
 }
 
@@ -38,7 +39,6 @@ p {
 }
 
 .dessert {
-  position: absolute;
   left: 50%;
   bottom: 100%;
   height: 180px;
