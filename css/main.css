@@ -74,15 +74,15 @@ p {
 
 @keyframes btn {
 
- 0% {
-   filter: blur(12px);
-   opacity: 0;
- }
+   0% {
+     filter: blur(12px);
+     opacity: 0;
+   }
 
- 100% {
-   filter: blur(0);
-   opacity: 100;
- }
+   100% {
+     filter: blur(0);
+     opacity: 100;
+   }
 
 }
 
