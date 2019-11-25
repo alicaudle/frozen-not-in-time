@@ -12,6 +12,8 @@ h1 {
   color: #990073;
   left: -.15em;
   transform: rotate(-10deg);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, .15);
+  filter: blur(12px);
 }
 
 p {
@@ -19,18 +21,25 @@ p {
   max-width: 19em;
   margin: .5em;
   transform: rotate(-6deg);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, .15);
+  filter: blur(12px);
+  opacity: 0;
 }
 
 .btn-ghost {
   color: #c09;
   border-color: #990073;
   margin-left: .5em;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, .15);
+  filter: blur(12px);
+  opacity: 0;
 }
 
 .btn-ghost:hover {
   color: #c09;
   border-color: #990073;
   background-color: rgba(153, 0, 115, .2);
+  opacity: 0;
 }
 
 .ice-cream {
@@ -49,21 +58,81 @@ p {
 
 .cone {
   z-index: 100;
-  animation: cone 300ms ease-in forwards;
+  animation: cone-drop 300ms ease-in forwards;
 }
 
 .mint-chip {
-  animation: mint-chip 300ms 300ms ease-in forwards;
+  animation: mint-chip-drop 300ms 300ms ease-in forwards;
 }
 
 .chocolate-chip {
-  animation: chocolate-chip 300ms 600ms ease-in forwards;
+  animation: chocolate-chip-drop 300ms 600ms ease-in forwards;
 }
 
 .vanilla-fudge {
-  animation: vanilla-fudge 200ms 900ms ease-in forwards;
+  animation: vanilla-fudge-drop 200ms 900ms ease-in forwards;
 }
 
 .cherry {
-  animation: cherry 150ms 1500ms ease-in forwards;
+  animation: cherry-drop 150ms 1500ms ease-in forwards;
+}
+
+@keyframes cone-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+
+}
+
+@keyframes mint-chip-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 106px;
+  }
+
+}
+
+@keyframes chocolate-chip-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 193px;
+  }
+
+}
+
+@keyframes vanilla-fudge-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 266px;
+  }
+
+}
+
+@keyframes cherry-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 350px;
+  }
+
 }
