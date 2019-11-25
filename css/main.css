@@ -10,10 +10,29 @@ html {
 
 h1 {
   color: #990073;
+  position: relative;
   left: -.15em;
   transform: rotate(-10deg);
   text-shadow: 2px 2px 1px rgba(0, 0, 0, .15);
   filter: blur(12px);
+  opacity: 0;
+  animation: h1 .2s 1.2s ease-in forwards;
+}
+
+@keyframes h1 {
+
+  0% {
+    transform: rotate(-10deg);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(-9deg);
+    filter: blur(0);
+    opacity: 100;
+  }
+
 }
 
 p {
@@ -24,6 +43,23 @@ p {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, .15);
   filter: blur(12px);
   opacity: 0;
+  animation: p .2s 1.2s ease-in forwards;
+}
+
+@keyframes p {
+
+  0% {
+    transform: rotate(-6deg);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(-5deg);
+    filter: blur(0);
+    opacity: 100;
+  }
+
 }
 
 .btn-ghost {
@@ -33,6 +69,21 @@ p {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, .15);
   filter: blur(12px);
   opacity: 0;
+  animation: btn .2s 1.2s ease-in forwards;
+}
+
+@keyframes btn {
+
+ 0% {
+   filter: blur(12px);
+   opacity: 0;
+ }
+
+ 100% {
+   filter: blur(0);
+   opacity: 100;
+ }
+
 }
 
 .btn-ghost:hover {
